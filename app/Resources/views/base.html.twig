@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8" />
+        <title>
+            {% block title %}{% endblock %}
+        </title>
+        {% block stylesheets %}{% endblock %}
+
+    </head>
+    <body>
+        {% block header %}{% endblock %}
+        {% block body %}{% endblock %}
+        {% block footer %}{% endblock %}
+        {% block javascripts %}
+            <script type="text/javascript" src="{{ asset('bundles/app/js/jquery.js') }}" ></script>
+            <script type="text/javascript" src="{{ asset('bundles/app/js/jquery.flexslider.js') }}" ></script>
+            <script type="text/javascript">
+                $(window).load(function() {
+                    $('.flexslider').flexslider({
+                        animation: "slide"
+                    });
+                });
+            </script>
+        {% endblock %}
+    </body>
+</html>
