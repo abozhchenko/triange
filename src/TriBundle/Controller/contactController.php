@@ -5,7 +5,7 @@ namespace TriBundle\Controller;
 use Symfony\Bundle\FrameworkBundle\Controller\Controller;
 use Sensio\Bundle\FrameworkExtraBundle\Configuration\Route;
 
-class contactController extends Controller
+class ContactController extends Controller
 {
     /**
      * @Route ("/contact", name="contact")

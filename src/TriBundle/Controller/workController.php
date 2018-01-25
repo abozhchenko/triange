@@ -5,7 +5,7 @@ namespace TriBundle\Controller;
 use Symfony\Bundle\FrameworkBundle\Controller\Controller;
 use Sensio\Bundle\FrameworkExtraBundle\Configuration\Route;
 
-class workController extends Controller
+class WorkController extends Controller
 {
     /**
      * @Route ("/work", name="work")
