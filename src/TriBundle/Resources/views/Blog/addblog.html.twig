@@ -1,0 +1,19 @@
+{% extends 'layout.html.twig' %}
+        {% block body %}
+            <div class="container">
+            <section class="row contact">
+                <div class="sixteen columns">
+                    <form class="clearfix">
+                        <input type="text" class="small-text" placeholder="Name">
+                        <input type="text" class="small-text" placeholder="Email">
+                        <input type="text" class="small-text" placeholder="Website">
+                        <textarea class="message">Message</textarea>
+                        <input type="submit" class="btn green">
+                    </form>
+                </div>
+            </section>
+            {{ form_start (add_post) }}
+            {{ form_widget(add_post) }}
+            {{ form_end(add_post) }}
+            </div>
+        {% endblock %}
